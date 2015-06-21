@@ -1,0 +1,86 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+figure.portofolio {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  max-height: 300px;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+figure.portofolio h3 {
+  margin: 0 0 5px 0;
+}
+figure.portofolio img {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  max-height: 300px;
+  max-width: 100%;
+  transition: all .5s;
+}
+figure.portofolio figcaption {
+  margin-top: 1px;
+  position: relative;
+  padding: 1.5em;
+  background-color: #a4d11b;
+  transition: all .5s;
+}
+figure.portofolio figcaption a {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  right: 1em;
+  bottom: 1.5em;
+  padding: 0.5em;
+  background-color: #290f77;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0a041c;
+  color: #a4d11b;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+figure.portofolio figcaption a:hover {
+  background-color: #481bd1;
+}
+figure.portofolio figcaption a:active {
+  background-color: #643ae5;
+}
+figure.portofolio figcaption span:before {
+  content: "by ";
+}
+
+/*
+figure figcaption:hover {
+  transform: translateY(-70px);
+}
+
+figure img:hover {
+  transform: translateY(-20px);
+}*/

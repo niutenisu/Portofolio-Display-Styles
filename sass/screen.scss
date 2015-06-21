@@ -1,0 +1,83 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass";
+@import "compass/reset/utilities";
+@import "compass/utilities";
+
+
+@include reset-html5;
+
+$figcaption-color: #a4d11b;
+$figcaption-complement: complement($figcaption-color);
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+figure.portofolio {
+  @include inline-block;
+  max-height: 300px;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  h3 {
+    margin: 0 0 5px 0;
+  }
+
+  img {
+  	@include inline-block;
+  	position: relative;
+    max-height: 300px;
+    max-width: 100%;
+    transition: all .5s;
+  }
+  
+  figcaption {
+
+  	margin-top: 1px;
+    position: relative;
+    padding: 1.5em;
+    background-color: $figcaption-color;
+    transition: all .5s;
+
+    a {
+        position: absolute;
+        @include inline-block;
+        text-decoration: none;
+        right: 1em;
+        bottom: 1.5em;
+        padding: 0.5em;
+        background-color: darken($figcaption-complement, 20%);
+    	border-width: 1px;
+    	border-style: solid;
+    	border-color: darken($figcaption-complement, 40%);
+    	color: $figcaption-color;
+    	@include border-radius(3px);
+    	@include single-transition(all, 0.3s);
+
+    	&:hover {
+    		background-color: $figcaption-complement;
+    	}
+    	&:active {
+    		background-color: lighten($figcaption-complement, 10%);
+    	}
+    }
+
+	span {
+		&:before {
+			content: "by ";
+		}
+	}
+  }
+}
+
+/*
+figure figcaption:hover {
+  transform: translateY(-70px);
+}
+
+figure img:hover {
+  transform: translateY(-20px);
+}*/
