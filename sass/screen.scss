@@ -12,10 +12,6 @@
 $figcaption-color: #a4d11b;
 $figcaption-complement: complement($figcaption-color);
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
 figure.portofolio {
   @include inline-block;
   max-height: 300px;
@@ -72,12 +68,3 @@ figure.portofolio {
 	}
   }
 }
-
-/*
-figure figcaption:hover {
-  transform: translateY(-70px);
-}
-
-figure img:hover {
-  transform: translateY(-20px);
-}*/

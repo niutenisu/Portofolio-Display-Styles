@@ -6,10 +6,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 figure.portofolio {
   display: inline-block;
   vertical-align: middle;
@@ -75,12 +71,3 @@ figure.portofolio figcaption a:active {
 figure.portofolio figcaption span:before {
   content: "by ";
 }
-
-/*
-figure figcaption:hover {
-  transform: translateY(-70px);
-}
-
-figure img:hover {
-  transform: translateY(-20px);
-}*/
