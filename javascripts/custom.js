@@ -1,22 +1,22 @@
 function portofolioPageInitialize(){
 	"use strict";
 	var speed = 10;
-	var self = 'figure.portofolio';
-	$('figure.portofolio')
-		.mouseenter(function() {
-			$(self + ' figcaption').animate({
+	$('figure.portofolio').each(function() {
+		$(this).mouseenter(function() {
+			$(this).children('figcaption').animate({
 					top: "-95px"
 			}, speed);
-			$(self + ' img').animate({
+			$(this).children('img').animate({
 					top: "-40px"
 			}, speed);
 		})
 		.mouseleave(function() {
-			$(self + ' figcaption').animate({
+			$(this).children('figcaption').animate({
 					top: "0"
 			}, speed);
-			$(self + ' img').animate({
+			$(this).children(' img').animate({
 					top: "0"
 			}, speed);
 		});
+	});
 }	
