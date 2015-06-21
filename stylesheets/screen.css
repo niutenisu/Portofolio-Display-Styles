@@ -37,6 +37,7 @@ figure.portofolio figcaption {
   position: relative;
   padding: 1.5em;
   background-color: #a4d11b;
+  opacity: 1;
   transition: all .5s;
 }
 figure.portofolio figcaption a {
