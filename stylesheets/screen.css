@@ -13,9 +13,10 @@ figure.portofolio {
   *zoom: 1;
   *display: inline;
   max-height: 300px;
-  overflow: hidden;
   max-width: 100%;
+  overflow: hidden;
   position: relative;
+  margin: 10px 10px;
 }
 figure.portofolio h3 {
   margin: 0 0 5px 0;

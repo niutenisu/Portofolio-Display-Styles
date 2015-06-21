@@ -15,9 +15,11 @@ $figcaption-complement: complement($figcaption-color);
 figure.portofolio {
   @include inline-block;
   max-height: 300px;
-  overflow: hidden;
   max-width: 100%;
+  overflow: hidden;
   position: relative;
+  margin: 10px 10px;
+
   h3 {
     margin: 0 0 5px 0;
   }
